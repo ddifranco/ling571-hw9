@@ -1,0 +1,148 @@
+S[NUM=?n] -> NP[NUM=?n] VP
+S[NUM=?n] -> NP[NUM=?n] VP PUNC
+S[NUM=?n] -> PP COM S[NUM=?n] PUNC
+
+VP -> VP ADVP
+VP -> VP Conj VP
+
+
+VP -> VBP NP
+VP -> VB PP
+VP -> VBD NP
+VP -> VBD NP PP
+VP -> VBZ NP
+VP -> AUX VP
+VP -> VBN PP
+VP -> VBZ RP
+VP -> VBN SBAR
+
+SBAR[NUM=?n] -> 'that' S[NUM=?n]
+
+ADVP -> Adv
+ADVP -> Adv ADVP
+
+NP[NUM=?n] -> Det Nom[NUM=?n] 
+NP[NUM=?n] -> Nom[NUM=?n]
+NP[NUM=?n] -> PossPro Nom[NUM=?n]
+NP[NUM=?n] -> PRP[NUM=?n]
+
+Nom[NUM=?n] -> ADJP Nom[NUM=?n]
+Nom[NUM=?n] -> Nom[NUM=?n] PP
+Nom[NUM=?n] -> Nom Nom[NUM=?n]
+
+Nom[NUM=?n] -> NN[NUM=?n]
+Nom[NUM=?n] -> NNS[NUM=?n]
+Nom[NUM=?n] -> NNP[NUM=?n]		
+
+ADJP -> Adj ADJP
+ADJP -> Adj 
+
+PP -> Prep NP
+
+AUX -> Aux
+AUX -> AuxZ
+
+
+
+Det -> 'a'
+Det -> 'A'
+Det -> 'the'
+Det -> 'The'
+
+PRP[NUM=sg] -> 'this'
+PRP[NUM=pl] -> 'them'
+PRP[NUM=pl] -> 'They'
+
+Prep -> 'In'
+Prep -> 'with'
+Prep -> 'in'
+Prep -> 'of'
+Prep -> 'by' 
+
+PossPro[NUM=pl] -> 'their' 
+PossPro[NUM=pl] -> 'Their'
+
+Adv -> 'today'
+Adv -> 'online'
+
+Adj -> 'dendritic'
+Adj -> 'immune'
+Adj -> 'infected'
+Adj -> 'new'
+Adj -> 'Systemic'
+Adj -> 'weak'
+
+Conj -> 'and'
+
+
+NNS[NUM=pl] -> 'cells'
+NNS[NUM=pl] -> 'fragments'
+NNS[NUM=pl] -> 'humans'
+NNS[NUM=pl] -> 'infections'
+NNS[NUM=pl] -> 'mice'
+NNS[NUM=pl] -> 'Scientists'
+
+NN[NUM=sg] -> 'body'
+NN[NUM=sg] -> 'case'
+NN[NUM=sg] -> 'immunity'
+N[NUM=sg]  -> 'malaria'
+N[NUM=sg]  -> 'mouse' 
+N[NUM=sg]  -> 'pathogen'
+N[NUM=sg]  -> 'research'
+N[NUM=sg]  -> 'researcher'
+N[NUM=sg]  -> 'response'
+N[NUM=sg]  -> 'sepsis'
+N[NUM=sg]  -> 'system'
+N[NUM=sg]  -> 'type'
+N[NUM=sg]  -> 'vaccine'
+
+NNP[NUM=sg] -> 'Dr'
+NNP[NUM=sg] -> 'Jose'
+NNP[NUM=sg] -> 'Villadangos'
+
+RP -> 'down'
+
+
+IN -> 'that'
+
+
+Aux -> 'have'
+AuxZ -> 'is'
+AuxZ -> 'was'
+AuxZ -> 'were'
+
+
+
+MD -> 'Will'
+
+VB  -> 'work'
+
+VBP -> 'alert'
+VBP -> 'capture'
+VBP -> 'display'
+VBP -> 'have'
+VBP -> 'overstimulate'
+
+VBD -> 'alerted'
+VBD -> 'injected'
+VBD -> 'published'
+VBD -> 'rescued' 
+VBD -> 'restored'
+VBD -> 'was'
+
+VBN -> 'alerted'
+VBN -> 'compromised'
+VBN  -> 'discovered'
+VBN -> 'made'
+
+VBZ -> 'invades'
+VBZ -> 'is'
+VBZ -> 'shuts'
+
+Adj -> 'whole'
+Adj -> 'live'
+
+COM -> ','
+PUNC -> '?'
+PUNC -> '.'
+
